@@ -1,0 +1,68 @@
+@font-face{
+    font-family: popReg;
+    src: url('../webfonts/poppings/Poppins-Regular.ttf');
+}
+@font-face{
+    font-family: popBold;
+    src: url('../webfonts/poppings/Poppins-Bold.ttf');
+}
+
+
+
+._malla{
+    background-image: url('../media/imgs/mallas/pattersLines-ultraminO25.png');
+}
+
+.popReg{
+    font-family: popReg;
+}
+.popBold{
+    font-family: popBold;
+}
+
+.bg-main{
+    background-color: #eee;
+}
+
+._exagon{
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+._CutInnerL{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
+}
+._CutInnerR{
+    clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0% 100%);
+}
+
+.invert-logo{
+    filter: invert(1);
+}
+
+.dark{
+
+    .dark\:light{
+        box-shadow: 0 0 20px #fff4;
+    }
+
+    .dark\:bg-black-100{
+        background:#222;
+    }
+
+    .dark\:hue-logo{
+        filter: hue-rotate(187deg);
+    }
+    
+    .dark\:invert-logo{
+        filter: invert(0);
+    }
+    .dark\:layer{
+        background: linear-gradient(slateblue,dodgerblue);
+        opacity:.2;
+    }
+
+}
+
+.border-r-green{
+    border-right: solid 4px lightseagreen;
+}
