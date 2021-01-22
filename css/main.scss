@@ -8,6 +8,9 @@
 }
 
 
+:root{
+    --powerlight: 2px;
+}
 
 ._malla{
     background-image: url('../media/imgs/mallas/pattersLines-ultraminO25.png');
@@ -35,9 +38,39 @@
     clip-path: polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0% 100%);
 }
 
+@media ( max-width: 768px ){
+
+    ._CutInnerL{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    ._CutInnerR{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+}
+
 .invert-logo{
     filter: invert(1);
 }
+
+
+._light-two-tone{
+
+    // $power:  2px;
+    text-shadow: -1px -2px var(--powerlight) orangered, 1px 2px var(--powerlight) aqua;
+}
+
+._light-min{
+    --powerlight: 1px;
+}
+
+._light-med{
+    --powerlight: 2px;
+}
+._light-max{
+    --powerlight: 4px;
+}
+
 
 .dark{
 
@@ -56,11 +89,22 @@
     .dark\:invert-logo{
         filter: invert(0);
     }
+
     .dark\:layer{
         background: linear-gradient(slateblue,dodgerblue);
-        opacity:.2;
+        opacity:.4;
     }
 
+}
+
+
+.bg-black-100{
+    background-color:#222;
+}
+
+.dark\:layer{
+    background: linear-gradient(orangered,black);
+    opacity:.2;
 }
 
 .border-r-green{

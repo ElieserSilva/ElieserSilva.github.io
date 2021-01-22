@@ -29,52 +29,119 @@
             <span class="bg-red transition duration-1000 dark:bg-blue"></span>
             <span class="bg-white transition duration-1000 dark:bg-black dark:bg-opacity-80"></span>
         </div>
-        <div class="relative z-50 w-full flex max-w-7xl  h-full mx-auto">
+        <div class="relative z-50 w-full flex justify-between max-w-7xl  h-full mx-auto">
             <!-- <img src="media/imgs/Logo/64.png" class="max-h-12" alt="" srcset=""> -->
             <div class="flex-grow-0 w-full max-w-xs lg:max-w-sm bg-red transition duration-1000 dark:bg-blue ">
+
                 <span class="relative z-40 px-2 flex items-center h-16 gap-4">
                     <button id="ButtonShowMenu" class="fas fa-bars text-4xl text-white bg-black bg-opacity-10 hover:bg-white hover:bg-opacity-40 w-10 h-10"></button>
-                    <h1 class="text-white uppercase text-xl popBold">ES Developer</h1>
+                    <h1 class="text-white uppercase text-xs md:text-xl popBold">ES Developer</h1>
                 </span>
 
                 <div id="panelMenuLeft" class="animated fadeInDown fixed hidden w-full z-10 pt-16 bottom-0 h-full flex transition duration-1000 bg-red dark:bg-blue border-b-2 border-white border-opacity-20 max-w-xs lg:max-w-sm lg:max-w-sm flex-shrink-0 text-white">
-                    <ul class="absolute border-l-2 border-white border-opacity-20 flex gap-4 p-4 bottom-0 left-0">
-                        <li><a href="#" class="fab fa-facebook-f w-8 h-8 flex items-center justify-center"> </a></li>
-                        <li><a href="#" class="fab fa-twitter w-8 h-8 flex items-center justify-center"> </a></li>
-                        <li><a href="#" class="fab fa-linkedin w-8 h-8 flex items-center justify-center"> </a></li>
-                        <li><a href="#" class="fab fa-whatsapp w-8 h-8 flex items-center justify-center"> </a></li>
+                    <ul class="flex flex-col w-full gap-1 p-4 _mainMenu flex items-center popBold uppercase text-sm">
+
+                    <li class="w-full">
+                        <a href="#" class="block px-3 py-2 hover:bg-white hover:bg-opacity-20">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="w-full">
+                        <a href="#" class="block px-3 py-2 hover:bg-white hover:bg-opacity-20">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li class="w-full">
+                        <a href="#" class="block px-3 py-2 hover:bg-white hover:bg-opacity-20">
+                            Contactos
+                        </a>
+                    </li>
+
                     </ul>
-                    <span class="p-8">
+
+                    <ul class="absolute border-l-2 border-white border-opacity-20 flex gap-1 p-4 bottom-0 left-0">
+                        <li><a href="#" class="hover:bg-white hover:bg-opacity-20 fab fa-facebook-f w-12 h-12 flex items-center justify-center"> </a></li>
+                        <li><a href="#" class="hover:bg-white hover:bg-opacity-20 fab fa-twitter w-12 h-12 flex items-center justify-center"> </a></li>
+                        <li><a href="#" class="hover:bg-white hover:bg-opacity-20 fab fa-linkedin w-12 h-12 flex items-center justify-center"> </a></li>
+                        <li><a href="#" class="hover:bg-white hover:bg-opacity-20 fab fa-whatsapp w-12 h-12 flex items-center justify-center"> </a></li>
+                    </ul>
+                    <!-- <span class="p-8 hidden">
                         <i class="fas fa-quote-left text-6xl text-white text-opacity-20 pr-2 float-left"></i>
                         <p class="text-sm popBold text-white text-opacity-80 tracking-wide">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur rerum iusto dicta odit laborum ducimus aut.
                         </p>
-                    </span>
+                    </span> -->
                 </div>
 
             </div>
 
-            <ul class="hidden md:flex w-full bg-white dark:bg-black dark:text-white gap-4 flex-grow _mainMenu flex justify-end items-center popBold uppercase text-sm">
-            <li><a href="#" class="px-3 py-2 hover:bg-red hover:text-white dark:hover:bg-blue">Inicio</a></li>
-            <li><a href="#" class="px-3 py-2 hover:bg-red hover:text-white dark:hover:bg-blue">Proyectos</a></li>
-            <li><a href="#" class="px-3 py-2 hover:bg-red hover:text-white dark:hover:bg-blue">Contactos</a></li>
-            <li><button href="#" id="DarkModeButton" class="rounded-full px-2 py-2 bg-black bg-red dark:bg-blue text-white fas fa-sun"></button></li>
-            </ul>
-            <img src="media/imgs/Logo/128.png" class="bg-white dark:bg-black dark:hue-logo h-full pl-2" alt="" srcset="">
+            
+
+            <div class="flex w-full bg-white dark:bg-black flex-grow justify-end">
+                <span class="block bg-white dark:bg-black pl-4 flex justify-center items-center">
+                    <button href="#" id="DarkModeButton" class="rounded-full h-8 w-8 px-2 py-2 bg-black bg-red dark:bg-blue text-white fas fa-sun"></button>
+                </span>
+                <img src="media/imgs/Logo/128.png" class="bg-white dark:bg-black dark:hue-logo h-full pl-2" alt="" srcset="">
+            </div>
         </div>
     </nav>
 
     <header class="relative _bg-img bg-black popReg block w-full flex mx-auto w-full h-screen" style="max-height: 900px;">
         <div class="relative w-full h-full bg-white mx-auto">
             <span class="layer dark:layer top-0 left-0 w-full h-full block absolute"></span>
-            <img src="media/imgs/bg.jpg" class="w-full h-full object-cover" alt="" srcset="">
+            
+            <video id="mainBgVideo" autoplay loop class="w-full h-full object-cover">
+                <source src="media/video/bg.mp4" type="video/mp4">
+            </video>
+
+            <article class="mx-auto absolute z-20 text-center top-0 w-full h-full flex justify-center flex-col items-center text-white">
+                
+                <div class="p-8 bg-fixed popReg">
+                    <h1 class="uppercase text-2xl md:text-4xl" style="text-shadow: 1px 1px 2px #0004;">
+                        Materializamos tus <br>
+                        <span class="popBold text-white text-8xl md:text-9xl _light-two-tone _light-max">
+                            IDeas
+                        </span>
+                    </h1>
+                    <p class="max-w-xl" style="text-shadow: 1px 1px 2px #0004;">
+                        Si TÚ lo sueñas nosotros lo hacemos <b class="popBold">REALIDAD</b>.
+                    </p>
+                    <button class="mt-6 p-3 px-6 border-2 hover:bg-red dark:hover:bg-blue hover:border-transparent hover:bg-white border-white popBold uppercase">
+                        Contactar
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="hidden mx-auto absolute text-center top-0 w-full h-full md:flex justify-end flex-col items-center text-white">
+                <div class="p-4 border-t-2 border-white border-opacity-20 max-w-5xl grid grid-cols-5 text-xs">
+                    <span class="block border-r-2 border-white border-opacity-20 p-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                    <span class="block border-r-2 border-white border-opacity-20 p-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                    <span class="block border-r-2 border-white border-opacity-20 p-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                    <span class="block border-r-2 border-white border-opacity-20 p-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                    <span class="block p-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </span>
+                </div>
+            </article>
+            <!-- <img src="media/imgs/bg.jpg" class="w-full h-full object-cover" alt="" srcset=""> -->
         </div>
     </header>
     <main class="relative w-full max-w-5xl mx-auto">
         <!-- <aside class="bg-red dark:bg-blue w-full max-w-xs lg:max-w-sm">
             aside
         </aside> --> 
-        <section class="p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+        <section class="relative p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
             <header class="text-center popReg">
                 <h2 class="uppercase tracking-widest my-2 p-2">Bienvenid@</h2>
                 <h3 class="uppercase popBold max-w-3xl mx-auto text-4xl p-2 my-4">
@@ -88,15 +155,18 @@
                 
             </header>
             <p class="bg-white bg-opacity-10 p-8 text-sm mx-auto max-w-3xl popReg text-center rounded my-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia unde fugit est magni! Enim incidunt voluptates in, officiis explicabo beatae eum praesentium mollitia molestiae quibusdam facilis quos magnam laborum deserunt!
+                El desarrollo web es un mundo gigantesco y lleno de muchas posibilidades creativas en las cuales nosotros podemos materializar diversos y hasta infinitas ideas en proyectos creativos unicos. si deseas concretar o materializar tus ideas creativas para tu producto, marca o empresa estas en el lugar indicado.<br><br>
+
+                Hola, mi nombre es Elieser Silva y Soy Diseñador UX/UI & Desarrollador Web FullStack con mas de 6 años de experiencia en conjunto con mi Colega Jairo Barrios Diseñador Grafico 2D, 3D y Publicitario. Te ayudaremos a materializar tus sueños creativos o causar impacto con tu marca o empresa.
             </p>
         </section>
 
         <section class="my-4 bg-white dark:bg-black-100 rounded-sm text-black dark:text-white shadow-lg overflow-hidden mt-4">
 
-            <article class="grid grid-cols-2">
-                <picture class="_CutInnerR h-400">
-                    <img src="media/imgs/img003.png" class="w-full h-full object-cover" alt="" srcset="">
+            <article class="relative grid md:grid-cols-2">
+                
+                <picture class="bg-black bg-opacity-20 _CutInnerR h-300 md:h-400 p-8">
+                    <img src="media/imgs/img001.jpg" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;"  alt="" srcset="">
                 </picture>
                 <div class="p-8 flex flex-col items-center justify-center">
 
@@ -115,12 +185,14 @@
                 </div>
             </article>
             
-            <article class="grid grid-cols-2">
-                <picture class="md:order-1 _CutInnerL h-400">
-                    <img src="media/imgs/img001.jpg" class="w-full h-full object-cover" alt="" srcset="">
+            <article class="grid md:grid-cols-2">
+
+                <picture class="bg-black bg-opacity-20 md:order-1 _CutInnerL h-300 md:h-400 p-8">
+                    <img src="media/imgs/img003.jpg" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;"  alt="" srcset="">
                 </picture>
-                <div class="p-8 flex flex-col items-center justify-center">
-                    <h3 class="text-sm uppercase popReg">Cotent Manager System</h3>
+
+                <div class="relative z-10 p-8 flex flex-col items-center justify-center">
+                    <h3 class="text-sm uppercase popReg">Content Manager System</h3>
                     <h2 Class="text-2xl uppercase popBold">Sitio Web Administrable</h2>
                     <div class="my-4 popReg text-red dark:text-blue flex items-center justify-center">
                         <span class="line-through">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -129,14 +201,14 @@
                     </div>
 
                     <p class="popReg bg-black bg-opacity-10 p-4 rounded text-sm text-justify">
-                        Si el Sitio web Estatico no es lo que tu quieres y Deseas Tener un Sitio web en el cual tu seas el Administrador de Contenido, podemos crearte un sitio web unico e impresionante con los avances tegnologicos del momento, en cual tu podras controlar cada parte del mismo de forma facil y rapida.
+                        Si el Sitio web Estatico no es lo que tu quieres y Deseas Tener un Sitio web en el cual tu seas el Administrador de Contenido, podemos crearte un sitio web unico e impresionante con los avances tegnologicos del momento, en el cual tu podras controlar cada parte del mismo de forma facil y rapida.
                     </p>
                 </div>
             </article>
             
-            <article class="grid grid-cols-2">
-                <picture class="_CutInnerR h-400">
-                    <img src="media/imgs/img002.png" class="w-full h-full object-cover" alt="" srcset="">
+            <article class="grid md:grid-cols-2">
+                <picture class="bg-black bg-opacity-20 _CutInnerR h-300 md:h-400 p-8">
+                    <img src="media/imgs/img002.png" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;" alt="" srcset="">
                 </picture>
                 <div class="p-8 flex flex-col items-center justify-center">
                     <h3 class="text-sm uppercase popReg">RED Social - Store - Solucion informatica</h3>
@@ -151,13 +223,13 @@
                     </p>
                 </div>
             </article>
-            <article class="grid grid-cols-2">
-                <picture class="_CutInnerL md:order-1 h-400">
-                    <img src="media/imgs/game001.png" class="w-full h-full object-cover" alt="" srcset="">
+            <article class="grid md:grid-cols-2">
+                <picture class="bg-black bg-opacity-20 _CutInnerL md:order-1 h-300 md:h-400 p-8">
+                    <img src="media/imgs/game001.jpg" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;" alt="" srcset="">
                 </picture>
                 <div class="p-8 flex flex-col items-center justify-center">
                     <h3 class="text-sm uppercase popReg">VIDEOJUEGOS</h3>
-                    <h2 Class="text-2xl uppercase popBold">Aplicacion web Interactiva</h2>
+                    <h2 Class="text-2xl uppercase popBold text-center">Aplicacion web Interactiva</h2>
                     <div class="my-4 popReg text-red dark:text-blue flex items-center justify-center">
                         <span class="line-through">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
                         <i class="fas flex justify-center items-center _exagon fa-chess-king w-10 h-12 bg-black bg-opacity-20"></i>
@@ -171,7 +243,7 @@
         </section>
         <section class="p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
             <header class="text-center popReg">
-                <h2 class="uppercase tracking-widest mt-2 p-2">Conocimientos de Desarrollo</h2>
+                <h2 class="uppercase tracking-widest mt-2 p-2">Conocimientos para el Desarrollo Web</h2>
                 <h3 class="uppercase popBold max-w-3xl mx-auto text-4xl p-2 mb-4">
                     FullStack Web Developer
                 </h3>
@@ -360,7 +432,52 @@
                 
             </p> -->
         </section>
+
+        <section class="p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+            <header class="text-center popReg">
+                <h2 class="uppercase tracking-widest mt-2 p-2">Fichas Personales</h2>
+                <h3 class="uppercase popBold max-w-3xl mx-auto text-4xl p-2 mb-4">
+                    Mas de 13 años de experiencia como equipo
+                </h3>
+                <div class="my-4 popReg text-red dark:text-blue flex items-center justify-center">
+                    <span class="line-through">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <i class="fas flex justify-center items-center _exagon fa-id-card w-10 h-12 bg-black bg-opacity-20"></i>
+                    <span class="line-through">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+                
+            </header>
+            <div class="flex text-center bg-black bg-opacity-10 rounded-lg p-4 justify-center gap-4 popReg">
+                <!--CARD-->
+                <span class="relative block w-full max-w-xs h-200 flex-shrink-0 bg-white dark:bg-black-100 border-t-2 border-l-2 border-white border-opacity-10 shadow-xl p-2 rounded-xl">
+                    <span class="absolute right-4 top-0 h-full w-1 block bg-red dark:bg-blue"></span>
+                    <span class="absolute left-0 top-4 h-1 w-full block bg-red dark:bg-blue"></span>
+
+                    <picture class="absolute top-8 left-8 w-20 h-24 p-2 bg-black bg-opacity-10 overflow-hidden">
+                        <img src="media/imgs/photo01.jpg" class="w-full h-full object-cover" alt="" srcset="">
+                    </picture>
+                    <span class="absolute text-left top-8 right-8 w-40 uppercase popBold text-base">
+                         <i class="fas fa-user text-red dark:text-blue text-xs"></i> Elieser Silva<br>
+                        <small class="tracking-wide block text-xs pt-1">
+                          <i class="fas fa-images text-red dark:text-blue text-xs mr-1"></i>  Diseñador UX/UI.
+                        </small>
+                        <small class="tracking-wide block text-xs pt-1">
+                          <i class="fas fa-code  text-red dark:text-blue text-xs mr-1"></i>  Desarrollador Web FullStack.
+                        </small>
+                    </span>
+                    <p class="absolute bottom-0 text-justify left-0 p-4 px-8 text-xs">
+                        Adobe XD, Figma, HTML, CSS, JS, php7, NodeJS, MySQL, Sass, Tailwindcss, PHASER, Apache, cPanel.
+                    </p>
+                </span>
+                
+            </div>
+            <!-- <p class="bg-white bg-opacity-10 p-8 text-sm mx-auto max-w-3xl popReg text-center rounded my-2">
+                
+            </p> -->
+        </section>
     </main>
+    <footer class="relative block bg-black-100 w-full h-100">
+
+    </footer>
     <script src="js/main-dist.js"></script>
 </body>
 </html>
