@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/solid.min.css">
     <link rel="stylesheet" href="css/brands.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?20200210">
     <title>ESDeveloper | Bienvenido</title>
     <style>
         /* ._bg-img{
@@ -30,7 +30,7 @@
             <span class="bg-white transition duration-1000 dark:bg-black dark:bg-opacity-80"></span>
         </div>
         <div class="relative z-50 w-full flex justify-between max-w-7xl  h-full mx-auto">
-            <!-- <img src="media/imgs/Logo/64.png" class="max-h-12" alt="" srcset=""> -->
+            <!-- <img loading="lazy" src="media/imgs/Logo/64.png" class="max-h-12" alt="" srcset=""> -->
             <div class="flex-grow-0 w-full max-w-xs lg:max-w-sm bg-red transition duration-1000 dark:bg-blue ">
 
                 <span class="relative z-40 px-2 flex items-center h-16 gap-4">
@@ -48,7 +48,7 @@
                     </li>
 
                     <li class="w-full">
-                        <a href="#" class="block px-3 py-2 hover:bg-white hover:bg-opacity-20">
+                        <a href="./#proyectos" class="block px-3 py-2 hover:bg-white hover:bg-opacity-20">
                             Proyectos
                         </a>
                     </li>
@@ -83,7 +83,7 @@
                 <span class="block bg-white dark:bg-black pl-4 flex justify-center items-center">
                     <button href="#" id="DarkModeButton" class="rounded-full h-8 w-8 px-2 py-2 bg-black bg-red dark:bg-blue text-white fas fa-sun"></button>
                 </span>
-                <img src="media/imgs/Logo/128.png" class="bg-white dark:bg-black dark:hue-logo h-full pl-2" alt="" srcset="">
+                <img loading="lazy" src="media/imgs/Logo/128.png" class="bg-white dark:bg-black dark:hue-logo h-full pl-2" alt="" srcset="">
             </div>
         </div>
     </nav>
@@ -92,7 +92,7 @@
         <div class="relative w-full h-full bg-white mx-auto">
             <span class="layer dark:layer top-0 left-0 w-full h-full block absolute"></span>
             
-            <video id="mainBgVideo" autoplay loop class="w-full h-full object-cover">
+            <video id="mainBgVideo" onload="this.play()" autoplay loop class="w-full h-full object-cover">
                 <source src="media/video/bg.mp4" type="video/mp4">
             </video>
 
@@ -117,24 +117,24 @@
 
             <article class="hidden mx-auto absolute text-center top-0 w-full h-full md:flex justify-end flex-col items-center text-white">
                 <div class="p-4 border-t-2 border-white border-opacity-20 max-w-5xl grid grid-cols-5 text-xs">
-                    <span class="block border-r-2 border-white border-opacity-20 p-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="block border-r-2 flex items-center justify-center tracking-wide border-white border-opacity-20 p-2">
+                        te ofrecemos Diseños Flexibles, unicos e impresionantes.
                     </span>
-                    <span class="block border-r-2 border-white border-opacity-20 p-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="block border-r-2 flex items-center justify-center tracking-wide border-white border-opacity-20 p-2 xl:p-4">
+                        Si deseas hacer impactante tu marca estas en el lugar indicado.
                     </span>
-                    <span class="block border-r-2 border-white border-opacity-20 p-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="block border-r-2 flex items-center justify-center tracking-wide border-white border-opacity-20 p-2 xl:p-4">
+                        Especialistas en el diseño y desarrollo de software en un solo lugar.
                     </span>
-                    <span class="block border-r-2 border-white border-opacity-20 p-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="block border-r-2 flex items-center justify-center tracking-wide border-white border-opacity-20 p-2 xl:p-4">
+                        Más de 13 años, de experiencia como equipo de diseño y desarrollo.
                     </span>
-                    <span class="block p-4">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="block flex items-center justify-center tracking-wide border-white border-opacity-20 p-2 xl:p-4">
+                        La solucion a tus problemas a un click de distancia, contactanos hoy.
                     </span>
                 </div>
             </article>
-            <!-- <img src="media/imgs/bg.jpg" class="w-full h-full object-cover" alt="" srcset=""> -->
+            <!-- <img loading="lazy" src="media/imgs/bg.jpg" class="w-full h-full object-cover" alt="" srcset=""> -->
         </div>
     </header>
     <main class="relative w-full max-w-5xl mx-auto">
@@ -142,6 +142,8 @@
             aside
         </aside> --> 
         <section class="relative p-2 md:p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+            
+            <img loading="lazy" loading="lazy" src="./media/imgs/periodictable/element8.png" class="absolute _gray-img hover:_gray-img-no left-4 top-4 w-12 h-12" alt="">
             <header class="text-center popReg">
                 <h2 class="uppercase tracking-widest my-2 p-2">Bienvenid@</h2>
                 <h3 class="uppercase popBold max-w-3xl mx-auto text-4xl p-2 my-4">
@@ -154,7 +156,12 @@
                 </div>
                 
             </header>
-            <p class="bg-white text-justify bg-opacity-10 p-8 text-sm mx-auto max-w-3xl popReg text-center rounded my-2">
+
+            <span class="animated bounce infinite _slowAnimation absolute w-16 h-20 bottom-48 left-24 z-10 rounded-lg _exagon bg-black bg-opacity-10 dark:bg-black-300"></span>
+            <span class="animated bounce infinite _slowAnimation absolute w-16 h-20 bottom-4 right-20 z-10 rounded-lg _exagon bg-black bg-opacity-10 dark:bg-black-300"></span>
+
+            <p class="bg-white dark:bg-black shadow-lg rounded-lg border-t-2 border-l-2 border-opacity-10 border-white text-justify p-8 text-sm mx-auto max-w-3xl popReg text-center rounded my-2 relative z-20">
+                
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;El desarrollo web es un mundo gigantesco y lleno de muchas posibilidades creativas en las cuales nosotros podemos materializar diversos y hasta infinitas ideas en proyectos creativos unicos. si deseas concretar o materializar tus ideas creativas para tu producto, marca o empresa estas en el lugar indicado.<br><br>
 
                 Hola, mi nombre es Elieser Silva y Soy Diseñador UX/UI & Desarrollador Web FullStack con mas de 6 años de experiencia en conjunto con mi Colega Jairo Barrios Diseñador Grafico 2D, 3D y Publicitario. Te ayudaremos a materializar tus sueños creativos o causar impacto con tu marca o empresa.
@@ -166,9 +173,9 @@
             <article class="relative grid md:grid-cols-2">
                 
                 <picture class="bg-black bg-opacity-20 _CutInnerR h-300 md:h-400 p-8">
-                    <img src="media/imgs/img001.jpg" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;"  alt="" srcset="">
+                    <img loading="lazy" loading="lazy" src="media/imgs/img001.jpg" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;"  alt="" srcset="">
                 </picture>
-                <div class="p-2 md:p-8 flex flex-col items-center justify-center  text-center">
+                <div class="p-2 md:p-8 flex flex-col border-r-4 border-white border-opacity-10 items-center justify-center  text-center">
 
                     <h3 class="text-sm uppercase popReg">Sitio web Informativo</h3>
                     <h2 Class="text-2xl uppercase popBold">Sitio WEb estatico</h2>
@@ -188,7 +195,7 @@
             <article class="grid md:grid-cols-2">
 
                 <picture class="bg-black bg-opacity-20 md:order-1 _CutInnerL h-300 md:h-400 p-8">
-                    <img src="media/imgs/img003.jpg" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;"  alt="" srcset="">
+                    <img loading="lazy" loading="lazy" src="media/imgs/img003.jpg" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;"  alt="" srcset="">
                 </picture>
 
                 <div class="relative z-10 p-2 md:p-8 flex flex-col items-center justify-center text-center">
@@ -208,9 +215,9 @@
             
             <article class="grid md:grid-cols-2">
                 <picture class="bg-black bg-opacity-20 _CutInnerR h-300 md:h-400 p-8">
-                    <img src="media/imgs/img002.png" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;" alt="" srcset="">
+                    <img loading="lazy" loading="lazy" src="media/imgs/img002.png" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;" alt="" srcset="">
                 </picture>
-                <div class="p-2 md:p-8 flex flex-col items-center justify-center text-center">
+                <div class="p-2 md:p-8 flex flex-col border-r-4 border-white border-opacity-10 items-center justify-center text-center">
                     <h3 class="text-sm uppercase popReg">RED Social - Store - Solucion informatica</h3>
                     <h2 Class="text-2xl uppercase popBold">Aplicacion Web de Negocio</h2>
                     <div class="my-4 popReg text-red dark:text-blue flex items-center justify-center">
@@ -225,7 +232,7 @@
             </article>
             <article class="grid md:grid-cols-2">
                 <picture class="bg-black bg-opacity-20 _CutInnerL md:order-1 h-300 md:h-400 p-8">
-                    <img src="media/imgs/game001.jpg" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;" alt="" srcset="">
+                    <img loading="lazy" loading="lazy" src="media/imgs/game001.jpg" class="w-full h-full object-cover rounded-xl" style="box-shadow: 0 0 20px #000a;" alt="" srcset="">
                 </picture>
                 <div class="p-2 md:p-8 flex flex-col items-center justify-center">
                     <h3 class="text-sm uppercase popReg">VIDEOJUEGOS</h3>
@@ -242,7 +249,8 @@
             </article>
         </section>
         <!--Stack de Desarrollo-->
-        <section class="p-2 md:p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+        <section class="relative p-2 md:p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+            <img loading="lazy" src="./media/imgs/periodictable/element34.png" class="absolute _gray-img hover:_gray-img-no right-4 top-4 w-12 h-12" alt="">
             <header class="text-center popReg">
                 <h2 class="uppercase tracking-widest mt-2 p-2">Conocimientos para el Desarrollo Web</h2>
                 <h3 class="uppercase popBold max-w-3xl mx-auto text-4xl p-2 mb-4">
@@ -261,11 +269,11 @@
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-center gap-4 popReg">
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/html.png" class="w-full  object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/html.png" class="w-full  object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             HTML
                         </b>
                         <span class="text-sm">
@@ -275,11 +283,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/css.png" class="w-full invert-logo dark:invert-logo  object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/css.png" class="w-full invert-logo dark:invert-logo  object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Cascade Style Sheet
                         </b>
                         <span class="text-sm">
@@ -289,11 +297,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/js.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/js.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Vanilla Javascript
                         </b>
                         <span class="text-sm">
@@ -303,11 +311,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10  flex">
-                        <img src="media/imgs/Logo/php7.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10  flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/php7.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             PHP
                         </b>
                         <span class="text-sm">
@@ -317,11 +325,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/mysql.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/mysql.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             MySQL
                         </b>
                         <span class="text-sm">
@@ -331,11 +339,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/sass.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/sass.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Sass
                         </b>
                         <span class="text-sm">
@@ -345,11 +353,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/tailwindcss.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/tailwindcss.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Tailwindcss
                         </b>
                         <span class="text-sm">
@@ -359,11 +367,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/phaser.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/phaser.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             PHASER Engine
                         </b>
                         <span class="text-sm">
@@ -373,11 +381,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/nodejs.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/nodejs.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             NODE JS
                         </b>
                         <span class="text-sm">
@@ -393,7 +401,8 @@
 
         </section>
         <!--Stack de Desarrollo-->
-        <section class="p-2 md:p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+        <section class="relative p-2 md:p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+            <img loading="lazy" src="./media/imgs/periodictable/element51.png" class="absolute _gray-img hover:_gray-img-no left-4 top-4 w-12 h-12" alt="">
             <header class="text-center popReg">
                 <h2 class="uppercase tracking-widest mt-2 p-2">Conocimientos para el Diseño</h2>
                 <h3 class="uppercase popBold max-w-3xl mx-auto text-4xl p-2 mb-4">
@@ -412,11 +421,11 @@
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-center gap-4 popReg">
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/adobexd.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/adobexd.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Adobe Xd
                         </b>
                         <span class="text-sm">
@@ -426,11 +435,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/figma.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/figma.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Figma
                         </b>
                         <span class="text-sm">
@@ -440,11 +449,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/adobeai.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/adobeai.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Adobe Ilustrator
                         </b>
                         <span class="text-sm">
@@ -454,11 +463,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10  flex">
-                        <img src="media/imgs/Logo/adobeps.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10  flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/adobeps.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Adobe Photoshop
                         </b>
                         <span class="text-sm">
@@ -468,11 +477,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/adobean.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/adobean.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Adobe Animate
                         </b>
                         <span class="text-sm">
@@ -482,11 +491,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/adobepr.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/adobepr.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Adobe Premier Pro
                         </b>
                         <span class="text-sm">
@@ -496,11 +505,11 @@
                 </span>
                 <!--CARD-->
                 <span class="block Cards grid flex-grow bg-white bg-opacity-10 p-2 rounded">
-                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img src="media/imgs/Logo/blender.png" class="w-full object-contain" alt="" srcset="">
+                    <picture class="p-2 h-40 bg-black bg-opacity-10 flex rounded-lg">
+                        <img loading="lazy" src="media/imgs/Logo/blender.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
-                        <b class="block popBold">
+                        <b class="block popBold uppercase">
                             Blender
                         </b>
                         <span class="text-sm">
@@ -514,7 +523,8 @@
             </p> -->
 
         </section>
-        <section class="p-2 md:p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+        <section id="proyectos" class="relative p-2 md:p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+            <img loading="lazy" src="./media/imgs/periodictable/element49.png" class="absolute _gray-img hover:_gray-img-no right-4 top-4 w-12 h-12" alt="">
             <header class="text-center popReg">
                 <h2 class="uppercase tracking-widest mt-2 p-2">Proyectos</h2>
                 <h3 class="uppercase popBold max-w-3xl mx-auto text-4xl p-2 mb-4">
@@ -529,9 +539,9 @@
             </header>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-center gap-4 popReg">
                 <!--CARD-->
-                <span class="cursor-pointer block Cards grid flex-grow bg-black bg-opacity-10 p-2 rounded">
+                <span class="cursor-pointer block Cards grid flex-grow bg-black bg-opacity-10 hover:bg-red hover:text-white dark:hover:bg-blue transition p-2 rounded">
                     <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img id="proyectPTA" src="media/imgs/Logo/fundaepicaweb.png" class="w-full object-contain" alt="" srcset="">
+                        <img loading="lazy" id="proyectPTA" src="media/imgs/Logo/fundaepicaweb.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
                         <b class="block popBold uppercase">
@@ -540,9 +550,9 @@
                     </p>
                 </span>
                 <!--CARD-->
-                <span class="cursor-pointer block Cards grid flex-grow bg-black bg-opacity-10 p-2 rounded">
+                <span class="cursor-pointer block Cards grid flex-grow bg-black bg-opacity-10 hover:bg-red hover:text-white dark:hover:bg-blue transition p-2 rounded">
                     <picture class="p-2 h-40 bg-black bg-opacity-10 flex">
-                        <img id="proyectGA" src="media/imgs/Logo/grupoamenca.png" class="w-full object-contain" alt="" srcset="">
+                        <img loading="lazy" id="proyectGA" src="media/imgs/Logo/grupoamenca.png" class="w-full object-contain" alt="" srcset="">
                     </picture>
                     <p class="pt-2 text-xs">
                         <b class="block popBold uppercase">
@@ -556,7 +566,8 @@
             </p> -->
         </section>
 
-        <section class="p-2 md:p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+        <section class="relative p-2 md:p-8 my-4 bg-white dark:bg-black-100 border-t-2 border-r-green rounded border-l-2 border-white border-opacity-10 text-black dark:text-white shadow-lg">
+            <img loading="lazy" src="./media/imgs/periodictable/element103.png" class="absolute _gray-img hover:_gray-img-no left-4 top-4 w-12 h-12" alt="">
             <header class="text-center popReg">
                 <h2 class="uppercase tracking-widest mt-2 p-2">Fichas Personales</h2>
                 <h3 class="uppercase popBold max-w-3xl mx-auto text-4xl p-2 mb-4">
@@ -569,14 +580,14 @@
                 </div>
                 
             </header>
-            <div class="flex text-center bg-black bg-opacity-10 rounded-lg p-4 justify-center gap-4 flex-wrap popReg">
+            <div class="flex text-center bg-black bg-opacity-20 rounded-lg p-4 justify-center gap-4 flex-wrap popReg">
                 <!--CARD Elieser-->
-                <span class="relative block w-full max-w-xs h-200 flex-shrink-0 bg-white dark:bg-black-100 border-t-2 border-l-2 border-white border-opacity-10 shadow-xl p-2 rounded-xl">
+                <span class="relative block shadow-inner transform scale-100 md:hover:scale-150 hover:z-20 transition w-full max-w-xs h-200 flex-shrink-0 bg-white dark:bg-black-100 border-t-2 border-l-2 border-white border-opacity-10 shadow-xl p-2 rounded-xl">
                     <span class="absolute right-4 top-0 h-full w-1 block bg-red dark:bg-blue"></span>
                     <span class="absolute left-0 top-4 h-1 w-full block bg-red dark:bg-blue"></span>
 
                     <picture class="absolute top-8 left-4 w-20 h-24 p-2 bg-black bg-opacity-10 overflow-hidden">
-                        <img src="media/imgs/photo00.png" class="w-full h-full object-cover" alt="" srcset="">
+                        <img loading="lazy" src="media/imgs/photoElieserSilva.jpg" class="w-full h-full object-cover" alt="" srcset="">
                     </picture>
                     <span class="absolute text-left top-8 right-8 w-40 uppercase popBold text-base">
                          <i class="fas fa-user text-red dark:text-blue text-xs"></i> Elieser Silva<br>
@@ -592,12 +603,12 @@
                     </p>
                 </span>
                 <!--CARD Jairo-->
-                <span class="relative block w-full max-w-xs h-200 flex-shrink-0 bg-white dark:bg-black-100 border-t-2 border-l-2 border-white border-opacity-10 shadow-xl p-2 rounded-xl">
+                <span class="relative block shadow-inner transform scale-100 md:hover:scale-150 hover:z-20 transition w-full max-w-xs h-200 flex-shrink-0 bg-white dark:bg-black-100 border-t-2 border-l-2 border-white border-opacity-10 shadow-xl p-2 rounded-xl">
                     <span class="absolute right-4 top-0 h-full w-1 block bg-red dark:bg-blue"></span>
                     <span class="absolute left-0 top-4 h-1 w-full block bg-red dark:bg-blue"></span>
 
                     <picture class="absolute top-8 left-4 w-20 h-24 p-2 bg-black bg-opacity-10 overflow-hidden">
-                        <img src="media/imgs/photo00.png" class="w-full h-full object-cover" alt="" srcset="">
+                        <img loading="lazy" src="media/imgs/photo00.png" class="w-full h-full object-cover" alt="" srcset="">
                     </picture>
                     <span class="absolute text-left top-8 right-8 w-40 uppercase popBold text-base">
                          <i class="fas fa-user text-red dark:text-blue text-xs"></i> Jairo Barrios<br>
@@ -619,8 +630,16 @@
             </p> -->
         </section>
     </main>
-    <footer class="relative block bg-black-100 w-full h-100">
-
+    <footer class="relative block _linearBlack w-full flex items-center py-12">
+        <div class="max-w-5xl text-sm mx-auto w-full flex flex-col items-center justify-center p-4"> 
+            <img loading="lazy" src="./media/imgs/Logo/128.png" class="_gray-img hover:_gray-img-no dark:hue-logo " alt="" srcset="">
+            <b class="block max-w-xs tracking-widest text-center text-white popBold uppercase">
+                ESDeveloper &copy;
+            </b>
+            <b class="block text-xs max-w-xs text-center text-white popBold uppercase">
+                Cojedes - Venezuela 2021
+            </b>
+        </div>
     </footer>
     <script src="js/main-dist.js"></script>
 </body>

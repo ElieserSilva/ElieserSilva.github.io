@@ -1,12 +1,6 @@
 window.addEventListener('DOMContentLoaded',(e)=>{
     console.log('Start main.js');
 
-    // setTimeout(()=>{
-
-    //     document.querySelector('#mainBgVideo').play();
-
-    // },5000)
-
     if(localStorage.theme === 'dark'){
         document.querySelector('html').classList.add('dark');
         document.querySelector('#DarkModeButton').classList.remove('fa-sun');
@@ -14,6 +8,11 @@ window.addEventListener('DOMContentLoaded',(e)=>{
         // document.querySelector('#DarkModeButton').classList.add('text-blue');
         // document.
     }
+
+    document.getElementById('mainBgVideo').addEventListener('loadeddata',(e)=>{
+        e.target.play()
+        console.log(e.target)
+    })
 
     document.addEventListener('click',e=>{
         let DomId = e.target.getAttribute('id');
