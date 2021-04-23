@@ -46,12 +46,17 @@ window.addEventListener('DOMContentLoaded',(e)=>{
             }
 
             case 'proyectPTA':{
-                window.open('http://localhost/www.fundaepicaweb.com','_blank');
+                window.open('https://fundaepicaweb.com','_blank');
                 break;
             }
 
             case 'proyectGA':{
-                window.open('http://localhost/www.grupoamenca.com','_blank');
+                window.open('https://grupoamenca.com','_blank');
+                break;
+            }
+
+            case 'proyectFIY':{
+                window.open('https://tucasadelinyector.com','_blank');
                 break;
             }
         }
