@@ -1,0 +1,1 @@
+.dot{position:absolute;left:0;top:0;transition:all linear .2s;background-color:#fff;border:solid 2px #0005}.dot.active{transform:translate(100%)}.dark .dot{background-color:orange}
